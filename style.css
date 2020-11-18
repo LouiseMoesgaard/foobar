@@ -1,0 +1,33 @@
+.person{
+    position: absolute;
+    display: inline-block;
+    height: 132px;
+    width: 75px; 
+    background-image:url("https://www.caveofprogramming.com/images/capguy-walk.png"); 
+    background-position: 0;
+  }
+
+  .walking_lane{
+      position: fixed;
+      bottom: 20vh;
+      height: 132px;
+      width: 100%;
+      overflow: hidden;
+  }
+  .walking{
+    animation: walking .2s steps(8, end) infinite;
+  }
+
+  @keyframes walking {
+    to {background-position: -600px;}
+  }
+
+
+
+#number{
+    width: 160px;
+    margin: 100px auto;
+    font-size: 2rem;
+
+}
+  
